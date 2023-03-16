@@ -33,8 +33,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         String query = "Create Table "+TABLE_NAMA+"("+
                 FIELD_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
                 FIELD_NAMA + " VARCHAR(50), " +
-                FIELD_ALAMAT +" TEXT" +
-                FIELD_JAM + "VARCHAR (30) " +
+                FIELD_ALAMAT +" TEXT," +
+                FIELD_JAM + " VARCHAR(30) " +
                 ");";
         db.execSQL(query);
 
